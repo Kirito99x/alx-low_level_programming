@@ -3,7 +3,7 @@
 /**
  * main - entry point
  *
- * Decsription: c progam that  use unistd and quo function to print
+ * Description: c progam that  use unistd and quo function to print
  *
  * Return: (0) zero when success
  */
