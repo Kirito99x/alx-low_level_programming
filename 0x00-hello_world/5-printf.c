@@ -1,11 +1,11 @@
 #include <stdio>
 
 /**
- * main -  entry point
+ * main - entry point
  *
- * its a c program that prints using printf function
+ * Description: its a c program that prints using printf function
  *
- * and return zero when success
+ * Return: (0) when success
 */
 
 int main(void)

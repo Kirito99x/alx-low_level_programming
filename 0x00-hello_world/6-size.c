@@ -1,11 +1,11 @@
 #include <stdio.h>
 
 /**
- * main -  entry point
+ * main - entry point
  *
- * its a c program that prints the size of various type using sizeof function
+ * Description: the size of various type using sizeof function
  *
- * and return zero when success
+ * Return:(0)  zero when success
 */
 
 int main(void)
