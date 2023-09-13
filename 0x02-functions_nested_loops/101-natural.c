@@ -1,20 +1,21 @@
-#include"main.h"
+#include <stdio.h>
+#include "main.h"
 
 /**
- * main - Entery point
- *
- * Description: the sun of all the multiples of 3 or 5 under 1024
- *
- * Retrun: return 0 when success
+ * main - prints the sum of all the multiples of 3 or 5 below 1024.
+ * Return: 0 if successful.
  */
 int main(void)
 {
-	int sum, num;
-	for (num = 0; num < 1024; num++)
+	int i;
+	int sum = 0;
+
+	for (i = 0; i < 1024; i++)
 	{
-		if ((num % 3 == 0) || (num % 5 ==0)
+		if (i % 3 == 0 || i % 5 == 0)
+			sum += i;
 	}
-	printf("%d", sum);
-	
+
+	printf("%d\n", sum);
 	return (0);
 }
