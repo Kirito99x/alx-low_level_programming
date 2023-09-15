@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * main - prints number 0 - 100 followed by a new line numbers that are 
- * 	mul by 3 are fizz by 5 are buzz by 3 or 5 are fizzbuzz
+ * main - prints number 0 - 100 followed by a new line numbers that are
+ * mul by 3 are fizz by 5 are buzz by 3 or 5 are fizzbuzz
  *
  * Return: 0 when success
-*/ 
+*/
 
 int main(void)
 {
