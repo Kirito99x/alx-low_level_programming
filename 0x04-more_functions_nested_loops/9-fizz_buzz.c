@@ -1,12 +1,12 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
- * main - prints number 0 - 100 followed by a new line numbers that are
- * mul by 3 are fizz by 5 are buzz by 3 or 5 are fizzbuzz
- *
- * Return: 0 when success
-*/
-
+ * main - prints the numbers from 1 to 100, followed by a new line
+ * but for multiples of three prints Fizz instead of the number
+ * and for the multiples of five prints Buzz
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 	int i;
