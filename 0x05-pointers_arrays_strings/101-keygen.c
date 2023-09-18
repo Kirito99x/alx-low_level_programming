@@ -1,26 +1,27 @@
 #include "main.h"
+#include<stdlib.h>
+#include<time.h>
 
 /**
- * _atoi - convert a string to an integer
+ * main - generate randome valid password for the
+ * ptogram 101_crackme.
  *
- * @s: the pointer to convert
- *
- * Return: A integer
+ * Return: always 0.
 */
 
-int _atoi(char *s)
+int main(void)
 {
-	unsigned int num = 0;
-	int sign = 1;
+	int sum;
+	char c;
 
-	do {
-		if (*s == '-')
-			sign *= -1;
-		else if (*s >= '0' && *s <= '9')
-			num = (num * 10) + (*s - '0');
-		else if (num > 0)
-			break;
-	} while (*s++);
+	srand(time(0));
+	while (sum <= 2645)
+	{
+		c = rand() % 128;
+		sum += c;
+		putchar(c);
+	}
+	putchar(2772 - sum);
 
-	return (num * sign);
+	return (0);
 }
