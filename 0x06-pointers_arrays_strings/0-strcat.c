@@ -10,21 +10,22 @@
  */
 char *_strcat(char *dest, char *src)
 {
+    /* Move the destination pointer to its end. */
     char *orig_dest = dest;
-
-    /* move dest pointer to its end */
-    while (*dest)
+    while (*dest) {
         dest++;
+    }
 
-    /* copy src to dest */
-    while (*src)
-    {
+    /* Copy the source string to the destination string. */
+    while (*src) {
         *dest = *src;
         dest++;
         src++;
     }
 
-    *dest = '\0'; /* terminate the concatenated string */
+    /* Add a terminating null byte to the end of the concatenated string. */
+    *dest = '\0';
 
+    /* Return a pointer to the resulting string. */
     return orig_dest;
 }
