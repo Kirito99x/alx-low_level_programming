@@ -8,26 +8,20 @@
  *
  * Returns a pointer to the resulting string dest.
  */
-char *_strcat(char *dest, const char *src) {
-  int i = 0;
-  int j = 0;
+har *_strcat(char *dest, const char *src) 
+{
 
-  while (dest[i] != '\0') {
-    i++;
-  }
+	int i, j;
+	
+	i = 0;
 
-  while (src[j] != '\0') {
-    if (dest[i] == '\0') {
-      return NULL;
-    }
+	while (dest[i])
+		i++;
 
-    dest[i] = src[j];
-    i++;
-    j++;
-  }
 
-  dest[i] = '\0';
+	for (j = 0; src[j] ; j++)
+	
+		dest[i++] = src[j];
 
-  // The function returns a pointer to the resulting string dest.
-  return dest;
+	return (dest);
 }
