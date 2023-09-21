@@ -11,9 +11,8 @@
 char *_strcat(char *dest, char *src)
 {
     /* Move the destination pointer to its end. */
-    char *orig_dest = dest;
-    while (*dest != '\0') {
-        dest++;
+	char *orig_dest = dest;
+	while (*dest != '\0')dest++;
     }
 
     /* Copy the source string to the destination string. */
