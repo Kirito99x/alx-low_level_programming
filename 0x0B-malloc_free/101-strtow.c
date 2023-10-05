@@ -11,19 +11,19 @@
 
 int count_word(char *s)
 {
-	int flag, x, y;
+	int flag, a, b;
 
 	flag = 0;
-	y = 0;
+	b = 0;
 
-	for (x = 0; s[x] != '\0'; x++)
+	for (a = 0; s[a] != '\0'; a++)
 	{
-		if (s[x] == ' ')
+		if (s[a] == ' ')
 			flag = 0;
 		else if (flag == 0)
 		{
 			flag = 1;
-			y++;
+			b++;
 		}
 	}
 
@@ -31,7 +31,7 @@ int count_word(char *s)
 }
 
 /**
- * strtow - Entry point
+ * strtow - strtow
  *
  * @str: string
  *

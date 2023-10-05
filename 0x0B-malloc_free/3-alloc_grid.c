@@ -7,6 +7,7 @@
  * Return: 0 or arrays
  */
 
+int **alloc_grid(int width, int height)
 {
 	int **ar;
 	int i, j;
