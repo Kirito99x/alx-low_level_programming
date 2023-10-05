@@ -1,11 +1,11 @@
-nclude "main.h"
+#include "main.h"
 
 /**
- *  * char *create_array - creates an array of chars
- *   * @size: int
- *    * @c: char
- *     * Return: NULL if size is 0.
- *      */
+ * char *create_array - creates an array of chars
+ * @size: int
+ * @c: char
+ * Return: NULL if size is 0.
+ */
 
 char *create_array(unsigned int size, char c)
 {
