@@ -1,3 +1,5 @@
+#include "variadic_functions.h"
+
 /**
  * print_numbers - Prints numbers, separated by a separator string.
  *
