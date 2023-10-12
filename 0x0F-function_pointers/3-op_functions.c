@@ -2,33 +2,63 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+
 /**
- * get_op_func - select operation
- * @s: operation
- * Return: int
+ * op_add - add
+ * @a: first int
+ * @b: 2nd int
+ * Return: the sum
  */
 
-
-int (*get_op_func(char *s))(int, int)
+int op_add(int a, int b)
 {
-	op_t ops[] = {
-		{"+", op_add},
-		{"-", op_sub},
-		{"*", op_mul},
-		{"/", op_div},
-		{"%", op_mod},
-		{NULL, NULL}
-	};
+	return (a + b);
+}
 
-	int i = 0;
+/**
+ * op_sub - subtract
+ * @a: first int
+ * @b: 2nd int
+ * Return: the sub
+ */
 
-	while (i < 5)
-	{
-		if (ops[i].op[0] == *s && strlen(s) == 1)
-		{
-			return (ops[i].f);
-		}
-		i++;
-	}
-	return (NULL);
+int op_sub(int a, int b)
+{
+	return (a - b);
+}
+
+/**
+ * op_mul - muliply
+ * @a: first int
+ * @b: 2nd int
+ * Return: the mul
+ */
+
+int op_mul(int a, int b)
+{
+	return (a * b);
+}
+
+/**
+ * op_div - divide
+ * @a: first int
+ * @b: 2nd int
+ * Return: the div
+ */
+
+int op_div(int a, int b)
+{
+	return (a / b);
+}
+
+/**
+ * op_mod - module
+ * @a: first int
+ * @b: 2nd int
+ * Return: the module
+ */
+
+int op_mod(int a, int b)
+{
+	return (a % b);
 }
